@@ -5,19 +5,16 @@ public:
     int data_ret = 0;
 
     while(x){
-        data_ret *= 10;
-        int add = x % 10;
+		data_ret *= 10;
+		int add = x % 10;
 
-        if((ispositive&&(INT_MAX -data_ret)>=add) ||
-           (!ispositive&&(INT_MIN -data_ret)<=add))
-            data_ret += add;
-        else return -1;//overflow happens
+		if((ispositive&&(INT_MAX -data_ret)>=add) ||
+			(!ispositive&&(INT_MIN -data_ret)<=add))
+			data_ret += add;
+        	else return -1;//overflow happens
+        	x /= 10;
+    	}
 
-        x /= 10;
-    }
-
-    return data_ret;
-}
-    
-    
+    	return data_ret;
+	}
 };
