@@ -1,1 +1,2 @@
-My implementation of some question from LeeCode.For the details of these question,go to https://oj.leetcode.com/problems/ to check.
+My implementation of some questions from LeeCode.
+For the details of these questions,go to https://oj.leetcode.com/problems/ to check.
