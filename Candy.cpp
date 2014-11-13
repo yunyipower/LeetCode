@@ -35,7 +35,6 @@ public:
             mincandies += pcandies[i];
         }
         delete []pcandies;
-
         return mincandies;
     }
 };
